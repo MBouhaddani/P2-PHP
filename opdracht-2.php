@@ -1,14 +1,34 @@
 <?php
 
-echo "<h1>Hallo wereld,</h1>";
-echo "Ik zit op het ";
+ $datum=date("l j F Y");
 
-$schoolnaam = "Techniek College Rotterdam !";
+ echo "Het is vandaag: $datum.";
 
-echo "$schoolnaam";
+ echo"<br>";
 
-$nieuweVariabele = "Dit is een nieuwe variabele.";
+ $dagVanHetJaar = date('z') ;
+ 
+ echo "Vandaag is het de $dagVanHetJaar'e dag van het jaar.";
 
-echo "Hier is de waarde van de nieuwe variabele: $nieuweVariabele";
+echo"<br>";
+
+$dagVanDeWeek = date('l');  $nummerDagVanDeWeek = date('N');
+
+echo $dagVanDeWeek . " is de " . $nummerDagVanDeWeek . "e dag van de week.";
+
+echo"<br>";
+$maandNaam = date('F'); 
+
+$aantalDagen = date('t');
+
+echo "De maand " . $maandNaam . " heeft in totaal " . $aantalDagen . " dagen.";
+
+echo"<br>";
+
+
+
+echo "Het jaar 2021 is geen schrikkeljaar.";
+
+
 
 ?>
