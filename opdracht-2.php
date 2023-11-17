@@ -1,19 +1,24 @@
 <?php
 
-// Een voorbeeld van een echo en een print
-echo "<h1>Hallo wereld,</h1>";
-echo "Ik zit op het ";
+//* Auteur: Mohamed B
+//* Datum: 17-11-2023
+//* functie: datum en tijd
 
-// Voorbeeld van een variabele in PHP.
-$schoolnaam = "Techniek College Rotterdam !";
 
-// Met echo kun je iets op het scherm tonen.
-echo "$schoolnaam";
 
-// Dit is mijn eigen commentaarregel
-$nieuweVariabele = "Dit is een nieuwe variabele.";
-
-// Dit is mijn eigen echo
-echo "Hier is de waarde van de nieuwe variabele: $nieuweVariabele";
+$datum=date("l j F Y");
+echo "Het is vandaag: $datum.";
+echo"<br>";
+$dagVanHetJaar = date('z') ;
+echo "Vandaag is het de $dagVanHetJaar'e dag van het jaar.";
+echo"<br>";
+$dagVanDeWeek = date('l');  $nummerDagVanDeWeek = date('N');
+echo $dagVanDeWeek . " is de " . $nummerDagVanDeWeek . "e dag van de week.";
+echo"<br>";
+$maandNaam = date('F'); 
+$aantalDagen = date('t');
+echo "De maand " . $maandNaam . " heeft in totaal " . $aantalDagen . " dagen.";
+echo"<br>";
+echo "Het jaar 2021 is geen schrikkeljaar.";
 
 ?>
