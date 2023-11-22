@@ -15,5 +15,16 @@ echo "De uitkomst is $uitkomst <br>";
 // $uikomst verhogen met 10%
 $uitkomst * 1.1;
 
+$uitkomst = $uitkomst * 1.1;
+
+echo "<br>";
+echo "$uitkomst";
+
+//trek er 1000 af
+$uitkomst = $uitkomst - 1000;
+
+
+echo "<br> eindresultaat is $uitkomst";
+
 ?>
 
