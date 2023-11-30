@@ -1,5 +1,5 @@
 <?php
-// Array of products and prices
+
 $products = [
     "A" => 100,
     "B" => 200,
